@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Add Google Fonts Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- add Font Awesome Kit(script) to get Font awesome icons  -->
+    <script src="https://kit.fontawesome.com/d7fa8ec981.js" crossorigin="anonymous"></script>
+    <!-- add font-awesome library using cdnjs link | cdn = Content Delivery Network-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Weather Main Container| w = weather -->
+    <div class="w-main-container">
+        <div class="search-container">
+            <!-- search-container: Include search bar, search button and icon -->
+            <input type="text" class="search-bar" placeholder="Search.." onclick="searchbarClicked()">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <!-- Weather Information: City, Temperatur, Description, Humidity, Wind Speed -->
+        <div class="w-info">
+            <h2 class="city">weather in ~ANY CITY~ Just Search..</h2>
+            <h1 class="temp">°C</h1>
+            <div class="sub-flex-container">
+                <img src="" alt="" class="icon">
+                <div class="description">not cloudy</div>
+            </div>
+            <div class="humidity">humidity: 0%</div>
+            <div class="wind-speed">Wind Speed: 0 km/h</div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

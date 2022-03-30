@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: grey;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("https://source.unsplash.com/random/?landscape,day");
+  background-repeat: no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-size: 100%;
+}
+
+body .w-main-container {
+  background: #000000;
+  color: white;
+  opacity: 0.80;
+  margin: 16px;
+  padding: 32px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+}
+
+body .w-main-container .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .w-main-container .search-container .search-bar {
+  border: none;
+  outline: none;
+  padding: 5px 16px;
+  border-radius: 18px;
+  width: 100%;
+  background: grey;
+  color: white;
+  font-size: 120%;
+  font-family: inherit;
+}
+
+body .w-main-container .search-container .search-bar::-webkit-input-placeholder {
+  color: white;
+}
+
+body .w-main-container .search-container .search-bar:-ms-input-placeholder {
+  color: white;
+}
+
+body .w-main-container .search-container .search-bar::-ms-input-placeholder {
+  color: white;
+}
+
+body .w-main-container .search-container .search-bar::placeholder {
+  color: white;
+}
+
+body .w-main-container .search-container .search-btn {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 46px;
+  height: 40px;
+  background: grey;
+  color: white;
+}
+
+body .w-main-container .search-container .search-btn:hover {
+  background-color: #bbb8b8;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body .w-main-container .w-info .celsius {
+  color: yellow;
+}
+
+body .w-main-container .w-info .description,
+body .w-main-container .w-info .humidity {
+  text-transform: capitalize;
+}
+
+body .w-main-container .w-info .description {
+  margin-left: 8px;
+}
+
+body .w-main-container .w-info .city {
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+body .w-main-container .w-info .temp {
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-bottom: 7px;
+}
+
+body .w-main-container .w-info .sub-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body footer img.icon-img {
+  border-radius: 30px;
+  width: 180px;
+  height: 180px;
+}
+/*# sourceMappingURL=style.css.map */

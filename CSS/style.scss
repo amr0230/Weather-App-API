@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+}
+
+// Styling the Body //
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+    font-family: 'Open Sans', sans-serif;
+    //Random Image From Search Term
+    background-image: url('https://source.unsplash.com/random/?landscape,day');
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: 100%;
+
+    // Styling the Weather main container //
+    .w-main-container {
+        background: #000000;
+        color: white;
+        opacity: 0.80;
+        margin: 16px;
+        padding: 32px;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 420px;
+
+        // Styling the Search container //
+        .search-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            // Styling the Search Bar //
+            .search-bar {
+                border: none;
+                outline: none;
+                padding: 5px 16px;
+                border-radius: 18px;
+                width: 100%;
+                background: grey;
+                color: white;
+                font-size: 120%;
+                font-family: inherit;
+
+                &::placeholder {
+                    color: white;
+                }
+            }
+
+            // Styling the Search Button //
+            .search-btn {
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-left: 10px;
+                width: 46px;
+                height: 40px;
+                background: grey;
+                color: white;
+
+                &:hover {
+                    background-color: rgb(187, 184, 184);
+                    transition: 0.4s ease-in-out;
+                }
+            }
+        }
+
+        // Styling the Weather Information Section //
+        .w-info {
+            .celsius {
+                color: yellow;
+            }
+
+            .description,
+            .humidity {
+                text-transform: capitalize;
+            }
+
+            .description {
+                margin-left: 8px;
+            }
+
+            //City
+            .city {
+                text-transform: capitalize;
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+
+            //Temperature
+            .temp {
+                margin-top: 20px;
+                margin-left: 0px;
+                margin-bottom: 7px;
+            }
+
+            // For Icons and Description
+            .sub-flex-container {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-# weather-app
+# weather-app-api
 This weather app helps to know the weather of any city that you want to search for.
 
 Built by using HTML, CSS, and JavaScript.
